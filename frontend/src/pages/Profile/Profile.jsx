@@ -11,7 +11,7 @@ const Profile = () => {
       try {
         const token = localStorage.getItem("token");
 
-        const res = await axios.get('http://localhost:4000/api/user/profile', {
+        const res = await axios.get('https://custardcart.onrender.com/api/user/profile', {
           headers: { token }
         });
 

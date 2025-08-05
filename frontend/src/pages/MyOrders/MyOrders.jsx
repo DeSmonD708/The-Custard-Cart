@@ -11,7 +11,7 @@ const MyOrders = () => {
     const fetchOrders = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get('http://localhost:4000/api/order/myorders', {
+        const response = await axios.get('https://custardcart.onrender.com/api/order/myorders', {
           headers: { token }
         });
 

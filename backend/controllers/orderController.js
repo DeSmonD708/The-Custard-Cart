@@ -21,7 +21,7 @@ export const placeOrder = async (req, res) => {
       deliveryCharge,
       totalAmount,
       address: req.body.address,
-      status: "pending",
+      status: "Food is Processing",
       payment: false
     });
     await newOrder.save();

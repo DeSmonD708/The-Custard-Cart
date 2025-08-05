@@ -17,7 +17,7 @@ const VerifyPayment = () => {
       try {
         const token = localStorage.getItem('token');
 
-        const res = await axios.post('http://localhost:4000/api/order/verify', {
+        const res = await axios.post('https://custardcart.onrender.com/api/order/verify', {
           orderId,
           razorpay_order_id,
           razorpay_payment_id,
